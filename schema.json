@@ -1,0 +1,450 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "weights and measures",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetWeightIntent",
+                    "slots": [
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "unit",
+                            "type": "VolumeUnit"
+                        },
+                        {
+                            "name": "ingredient",
+                            "type": "IngredientName"
+                        },
+                        {
+                            "name": "numerator",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "decimal",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "denominator",
+                            "type": "FractionDenominator"
+                        }
+                    ],
+                    "samples": [
+                        "about oh point {decimal} {unit} of {ingredient}",
+                        "about zero point {decimal} {unit} of {ingredient}",
+                        "about {quantity} {denominator} {unit} of {ingredient}",
+                        "about {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "about {quantity} point {decimal} {unit} of {ingredient}",
+                        "about {quantity} {unit} of {ingredient}",
+                        "about oh point {decimal} {unit} {ingredient}",
+                        "about zero point {decimal} {unit} {ingredient}",
+                        "about {quantity} {denominator} {unit} {ingredient}",
+                        "about {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "about {quantity} point {decimal} {unit} {ingredient}",
+                        "about {quantity} {unit} {ingredient}",
+                        "for oh point {decimal} {unit} of {ingredient}",
+                        "for zero point {decimal} {unit} of {ingredient}",
+                        "for {quantity} {denominator} {unit} of {ingredient}",
+                        "for {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "for {quantity} point {decimal} {unit} of {ingredient}",
+                        "for {quantity} {unit} of {ingredient}",
+                        "for oh point {decimal} {unit} {ingredient}",
+                        "for zero point {decimal} {unit} {ingredient}",
+                        "for {quantity} {denominator} {unit} {ingredient}",
+                        "for {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "for {quantity} point {decimal} {unit} {ingredient}",
+                        "for {quantity} {unit} {ingredient}",
+                        "the weight of oh point {decimal} {unit} of {ingredient}",
+                        "the weight of zero point {decimal} {unit} of {ingredient}",
+                        "the weight of {quantity} {denominator} {unit} of {ingredient}",
+                        "the weight of {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "the weight of {quantity} point {decimal} {unit} of {ingredient}",
+                        "the weight of {quantity} {unit} of {ingredient}",
+                        "the weight of oh point {decimal} {unit} {ingredient}",
+                        "the weight of zero point {decimal} {unit} {ingredient}",
+                        "the weight of {quantity} {denominator} {unit} {ingredient}",
+                        "the weight of {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "the weight of {quantity} point {decimal} {unit} {ingredient}",
+                        "the weight of {quantity} {unit} {ingredient}",
+                        "about the weight of oh point {decimal} {unit} of {ingredient}",
+                        "about the weight of zero point {decimal} {unit} of {ingredient}",
+                        "about the weight of {quantity} {denominator} {unit} of {ingredient}",
+                        "about the weight of {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "about the weight of {quantity} point {decimal} {unit} of {ingredient}",
+                        "about the weight of {quantity} {unit} of {ingredient}",
+                        "about the weight of oh point {decimal} {unit} {ingredient}",
+                        "about the weight of zero point {decimal} {unit} {ingredient}",
+                        "about the weight of {quantity} {denominator} {unit} {ingredient}",
+                        "about the weight of {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "about the weight of {quantity} point {decimal} {unit} {ingredient}",
+                        "about the weight of {quantity} {unit} {ingredient}",
+                        "for the weight of oh point {decimal} {unit} of {ingredient}",
+                        "for the weight of zero point {decimal} {unit} of {ingredient}",
+                        "for the weight of {quantity} {denominator} {unit} of {ingredient}",
+                        "for the weight of {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "for the weight of {quantity} point {decimal} {unit} of {ingredient}",
+                        "for the weight of {quantity} {unit} of {ingredient}",
+                        "for the weight of oh point {decimal} {unit} {ingredient}",
+                        "for the weight of zero point {decimal} {unit} {ingredient}",
+                        "for the weight of {quantity} {denominator} {unit} {ingredient}",
+                        "for the weight of {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "for the weight of {quantity} point {decimal} {unit} {ingredient}",
+                        "for the weight of {quantity} {unit} {ingredient}",
+                        "how much is oh point {decimal} {unit} of {ingredient}",
+                        "how much is zero point {decimal} {unit} of {ingredient}",
+                        "how much is {quantity} {denominator} {unit} of {ingredient}",
+                        "how much is {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "how much is {quantity} point {decimal} {unit} of {ingredient}",
+                        "how much is {quantity} {unit} of {ingredient}",
+                        "how much is oh point {decimal} {unit} {ingredient}",
+                        "how much is zero point {decimal} {unit} {ingredient}",
+                        "how much is {quantity} {denominator} {unit} {ingredient}",
+                        "how much is {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "how much is {quantity} point {decimal} {unit} {ingredient}",
+                        "how much is {quantity} {unit} {ingredient}",
+                        "how much does oh point {decimal} {unit} of {ingredient} weigh",
+                        "how much does zero point {decimal} {unit} of {ingredient} weigh",
+                        "how much does {quantity} {denominator} {unit} of {ingredient} weigh",
+                        "how much does {quantity} and {numerator} {denominator} {unit} of {ingredient} weigh",
+                        "how much does {quantity} point {decimal} {unit} of {ingredient} weigh",
+                        "how much does {quantity} {unit} of {ingredient} weigh",
+                        "how much does oh point {decimal} {unit} {ingredient} weigh",
+                        "how much does zero point {decimal} {unit} {ingredient} weigh",
+                        "how much does {quantity} {denominator} {unit} {ingredient} weigh",
+                        "how much does {quantity} and {numerator} {denominator} {unit} {ingredient} weigh",
+                        "how much does {quantity} point {decimal} {unit} {ingredient} weigh",
+                        "how much does {quantity} {unit} {ingredient} weigh",
+                        "what is oh point {decimal} {unit} of {ingredient}",
+                        "what is zero point {decimal} {unit} of {ingredient}",
+                        "what is {quantity} {denominator} {unit} of {ingredient}",
+                        "what is {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "what is {quantity} point {decimal} {unit} of {ingredient}",
+                        "what is {quantity} {unit} of {ingredient}",
+                        "what is oh point {decimal} {unit} {ingredient}",
+                        "what is zero point {decimal} {unit} {ingredient}",
+                        "what is {quantity} {denominator} {unit} {ingredient}",
+                        "what is {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "what is {quantity} point {decimal} {unit} {ingredient}",
+                        "what is {quantity} {unit} {ingredient}",
+                        "what is the weight of oh point {decimal} {unit} of {ingredient}",
+                        "what is the weight of zero point {decimal} {unit} of {ingredient}",
+                        "what is the weight of {quantity} {denominator} {unit} of {ingredient}",
+                        "what is the weight of {quantity} and {numerator} {denominator} {unit} of {ingredient}",
+                        "what is the weight of {quantity} point {decimal} {unit} of {ingredient}",
+                        "what is the weight of {quantity} {unit} of {ingredient}",
+                        "what is the weight of oh point {decimal} {unit} {ingredient}",
+                        "what is the weight of zero point {decimal} {unit} {ingredient}",
+                        "what is the weight of {quantity} {denominator} {unit} {ingredient}",
+                        "what is the weight of {quantity} and {numerator} {denominator} {unit} {ingredient}",
+                        "what is the weight of {quantity} point {decimal} {unit} {ingredient}",
+                        "what is the weight of {quantity} {unit} {ingredient}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "VolumeUnit",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "gallon",
+                                "synonyms": [
+                                    "gallons"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quart",
+                                "synonyms": [
+                                    "quarts"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pint",
+                                "synonyms": [
+                                    "pints"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cup",
+                                "synonyms": [
+                                    "cups"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tablespoon",
+                                "synonyms": [
+                                    "tablespoons"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "teaspoon",
+                                "synonyms": [
+                                    "teaspoons"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IngredientName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "shredded cheese",
+                                "synonyms": [
+                                    "shredded cheddar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sifted powdered sugar",
+                                "synonyms": [
+                                    "sifted confectioners sugar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "powdered sugar",
+                                "synonyms": [
+                                    "confectioners sugar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brown sugar",
+                                "synonyms": [
+                                    "dark brown sugar",
+                                    "light brown sugar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sour cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peanut butter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oil",
+                                "synonyms": [
+                                    "peanut oil",
+                                    "sesame oil",
+                                    "vegetable oil",
+                                    "olive oil",
+                                    "canola oil"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "molasses"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "evaporated milk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sweetened condensed milk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "milk",
+                                "synonyms": [
+                                    "whole milk"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mayonnaise",
+                                "synonyms": [
+                                    "mayo"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "honey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sifted flour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crisco",
+                                "synonyms": [
+                                    "shortening"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cream cheese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cream",
+                                "synonyms": [
+                                    "whipping cream",
+                                    "heavy cream"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cornstarch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cornmeal",
+                                "synonyms": [
+                                    "stone ground cornmeal"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "corn",
+                                "synonyms": [
+                                    "corn kernels",
+                                    "frozen corn"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "corn syrup",
+                                "synonyms": [
+                                    "dark corn syrup",
+                                    "light corn syrup"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cocoa powder",
+                                "synonyms": [
+                                    "cocoa"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "buttermilk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sugar",
+                                "synonyms": [
+                                    "granulated sugar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flour",
+                                "synonyms": [
+                                    "all purpose flour"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FractionDenominator",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tenth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eighth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fourth",
+                                "synonyms": [
+                                    "quarter"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "third"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "half"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
