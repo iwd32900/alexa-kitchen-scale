@@ -136,6 +136,16 @@ def speak_ounces(weight_oz):
     elif eighths % 8 == 0: return f"{eighths//8}"
     else: return f"{eighths//8} and {frac[eighths % 8]}"
 
+def round_grams(weight_g):
+    # Round to the nearest 2% (maximum 1% rounding error)
+    if weight_g > 500:
+        return int(10 * round(weight_g/10))
+    # Round to the nearest 5% (maximum 2.5% rounding error)
+    elif weight_g > 100:
+        return int(5 * round(weight_g/5))
+    else:
+        return int(round(weight_g))
+
 def on_GetWeight(intent, session):
     slots = {k: v.get('value') for k, v in intent['slots'].items()}
     print(f"Slots = {slots}")
@@ -151,13 +161,7 @@ def on_GetWeight(intent, session):
     weight_oz = num_cups * INGREDIENTS[ingredient]
     weight_g = weight_oz * 28.35
 
-    # Round to the nearest gram, or 5g for larger amounts.
-    if weight_g < 100:
-        weight_g = int(round(weight_g))
-    else:
-        weight_g = int(5 * round(weight_g/5))
-
-    return respond(f"{num_cups} cups of {ingredient} weighs {speak_ounces(weight_oz)} ounces, or {weight_g} grams.")
+    return respond(f"{num_cups} cups of {ingredient} weighs {speak_ounces(weight_oz)} ounces, or {round_grams(weight_g)} grams.")
 
 def on_Help():
     return respond("""
