@@ -17,8 +17,10 @@ UNITS = {
 # oz of weight per cup
 INGREDIENTS = {
     'buttermilk': 8.75,
+    'chocolate chips': 6.5,
     'cocoa': 3,
         'cocoa powder': 3,
+    'coconut flakes': 2.75,
     'corn': 5,
         'corn kernels': 5,
         'frozen corn': 5,
@@ -38,12 +40,17 @@ INGREDIENTS = {
         'vegetable shortening': 6.5,
     'flour': 4.75,
         'all purpose flour': 4.75,
+    'graham cracker crumbs': 3,
     'honey': 13.5,
+    'jam': 12,
+        'jelly': 12,
+        'preserves': 12,
     'mayonaisse': 8,
         'mayo': 8,
     'milk': 8.75,
         'whole milk': 8.75,
         'skim milk': 8.75,
+    'molasses': 11.75,
     'oats': 3.5,
         'old fashioned oats': 3.5,
     'oil': 7,
@@ -53,7 +60,7 @@ INGREDIENTS = {
     'peanut butter': 8.75,
     'powdered sugar': 3.75,
         'confectioners sugar': 3.75,
-    'rice': 7,
+    'rice': 6.75,
     'sour cream': 7.75,
     'shredded cheese': 4,
         'shredded cheddar': 4,
@@ -66,7 +73,7 @@ INGREDIENTS = {
         'dark brown sugar': 7,
         'granulated sugar': 7,
         'light brown sugar': 7,
-    'sweetened condensed milk': 9.5,
+    'sweetened condensed milk': 11.5,
 }
 
 def respond(output, reprompt=None, session={}, end=True):
