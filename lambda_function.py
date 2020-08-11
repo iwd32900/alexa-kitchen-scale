@@ -157,6 +157,11 @@ def on_GetWeight(intent, session):
     slots = {k: v.get('value') for k, v in intent['slots'].items()}
     print(f"Slots = {slots}")
 
+    # "tablespoons" works fine in test, but not production, for some reason...
+    if slots['unit'] in ['spoon', 'spoons'] and slots['denominator'] in ['tea', 'table']:
+        slots['unit'] = slots['denominator'] + slots['unit']
+        slots['denominator'] = None
+
     if slots['unit'] not in UNITS:
         return respond("Sorry, I don't recognize that unit of measurement.")
 
